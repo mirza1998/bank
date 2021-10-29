@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Calculation</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+            <div id="loginArea" class="login-areia ">
+                <h4 class="text-center welcome">Welcom to w3codevs Bank</h4>
+                <input id="email" type="text " placeholder= "Enter your email" class="form-control" >
+                <br>
+                
+                <input id="pswrd" type="password" placeholder="Enter your password" class="form-control" required>
+                <br>
+                <button id="login" class="btn btn-success">Log in</button>
+            </div>
+            </div>
+        </div>
+
+        <div id="trntion-area" class="transection-area">
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="dipositID" class="deposit box">
+                        <h5>Total Deposit</h5>
+                        <h3>$<span id="depositAmount" >000</span></h3>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div  class="withdraw box">
+                        <h5>Total withdrow</h5>
+                        <h3>$ <span id="withdrawId">000</span></h3>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div  class="balance box">
+                        <h5>Total balance</h5>
+                        <h3>$ <span id="balanceId">1500</span></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="dps">
+                    <h4>Deposit</h4>
+                    <input id="deposit_input" type="number" placeholder="Your Current Depost">
+                    <br>
+                    <br>
+                    <button id="depositAmountBtn" class=" btn btn-success">Deposit</button>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="withdr">
+                    <h4>WithDraw</h4>
+                    <input id="withdraw_input" type="number" placeholder="Your Current withdraw">
+                    <br>
+                    <br>
+                    <button id="withdrawBtn" class=" btn btn-success"  >WithDraw</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
